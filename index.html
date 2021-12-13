@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <title>Calcule seu Imposto de Renda</title>
+</head>
+<body>
+    <main class="main-container">
+        <img id="irpf" src="./imagens/irpf.png">
+    </main>
+    
+    
+    <main class="info">
+        <div class="title">
+            <h1>
+             Calcule Aqui O Seu Imposto de Renda!!
+            </h1>
+        </div>
+    
+        <div class="nome">
+            <input type="text" id="name" placeholder="Seu nome aqui">   
+        </div>
+    
+        <div class="pessoas">
+            <input type="number" id="dependentes" placeholder="Informe número de dependentes"  min="1">   
+        </div>
+    
+        <div class="salario">
+            <input type="text" id="sal-bruto" placeholder="Salário bruto">   
+        </div>
+    
+        <div class="calcular">
+            
+            <button id="calculate" onclick="soma()" value="calcular">calcular</button>
+        </div>
+    </main>
+
+    <!--<div id="nomep"></div>  nome da pessoa 
+    <div id="salbruto"></div>  salário bruto
+    <div id="pdesinss"></div> porcentagem de desconto INSS 
+    <div id="desinss"></div> desconto INSS 
+    <div id="pdesirpf"></div>  porcentagem de desconto IRPF 
+    <div id="desirpf"></div>  desconto IRPF 
+    <div id="salliquido"></div>  salário líquido-->
+
+    <main id="tab_results">   
+        <div>
+            <p id="nome_result">Nome</p>
+            <div id="nomep"></div> <!-- nome da pessoa -->
+
+            <p id="salario_bruto">Salário bruto</p>
+            <div id="salbruto"></div> <!-- salário bruto -->
+            
+            <p id="desc_porc_inss">Porcentagem de desconto INSS</p>
+            <div id="pdesinss"></div> <!-- porcentagem de desconto INSS -->
+
+            <p id="desc_inss">Desconto INSS</p>
+            <div id="desinss"></div> <!-- desconto INSS -->
+
+            <p id="desc_porc_irpf">Porcentagem de desconto IRPF</p>
+            <div id="pdesirpf"></div> <!-- porcentagem de desconto IRPF -->
+
+            <p id="desc_irpf">Desconto IRPF</p>
+            <div id="desirpf"></div> <!-- desconto IRPF -->
+
+            <p id="salario_liquido">Sálario Líquido</p>
+            <div id="salliquido"></div> <!-- salário líquido-->
+            
+        </div>
+      
+    </main>
+    
+
+    
+</body>
+</html>
